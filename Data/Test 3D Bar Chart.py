@@ -12,7 +12,7 @@ from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt4agg import NavigationToolbar2QT as NavigationToolbar
 
 import csv
-f=open("C:/Yeohjk/Work/NUS/2017 to 2018/Summer Term/UROPS/Project/Nuclear-Astro-Vis/Data/Frames/Frame 1.csv","r")
+f=open("/Users/rafaeldesouza/Documents/GitHub/Nuclear-Astro-Vis/3D Bar Chart Frames/Frame 1.csv","r")
 openf=list(csv.reader(f, delimiter=',', quotechar='|'))
 totalframes=int(openf[5][1])
 zmaxvalue=float(openf[2][0])
@@ -64,7 +64,7 @@ class Window(QDialog):
     def plot(self):
         # Read the slider value
         timesno = int(self.horizontalSlider.value())+1
-        f=open("C:/Yeohjk/Work/NUS/2017 to 2018/Summer Term/UROPS/Project/Nuclear-Astro-Vis/Data/Frames/Frame %d.csv" %timesno,"r")
+        f=open("/Users/rafaeldesouza/Documents/GitHub/Nuclear-Astro-Vis/3D Bar Chart Frames/Frame %d.csv" %timesno,"r")
         openf=list(csv.reader(f, delimiter=',', quotechar='|'))
             
         # Creating Frame
