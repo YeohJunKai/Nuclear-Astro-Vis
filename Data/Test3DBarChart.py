@@ -1,4 +1,3 @@
-<<<<<<< HEAD:Data/Test 3D Bar Chart.py
 # Creating Frames 
 from math import asinh
 import numpy as np
@@ -108,8 +107,6 @@ if __name__ == '__main__':
 
 
 
-
-=======
 # Creating Frames 
 from math import asinh
 import numpy as np
@@ -222,6 +219,3 @@ if __name__ == '__main__':
 
 
 
-
-
->>>>>>> 5b4ec01cf9c7809ee68704688e88ae2b0ce8d6af:Data/Test3DBarChart.py
