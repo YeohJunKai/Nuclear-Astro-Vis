@@ -222,6 +222,6 @@ def formatfile(filelocation):
     e.writerow([neumax,promax])
     newfile2.close()
     return
-formatfile("nucleo.txt")
 
+formatfile("nucleo.txt")
 

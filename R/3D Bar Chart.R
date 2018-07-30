@@ -3,9 +3,9 @@ library("plot3D")
 library(reticulate)
 csv <- import("csv")
 
-source_python("Producing Frames New.py")
+#source_python("Producing Frames New.py")
 
-file <- formatfile("nucleo.txt")
+#file <- formatfile("nucleo.txt")
 
 
 times <- read.csv("Times.csv")
@@ -26,7 +26,7 @@ ui <- fluidPage(  headerPanel("3D Histogram"),
                                min = 1, max = steps,
                                value = 1, step = 1,
                                animate =
-                                 animationOptions(interval = 800, loop = TRUE)),
+                                 animationOptions(interval = 200, loop = TRUE)),
                    checkboxGroupInput("checkGroup", label = h3("Z Axis Scale"), 
                                       choices = list("Normal" = 1, "Logarithmic" = 2),
                                       selected = 1),
